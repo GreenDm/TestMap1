@@ -20,9 +20,9 @@ public class MyTranslator {
 public String translate(String en){
 
     StringBuilder result = new StringBuilder();
-    String[] source = en.split(" ");
-    for (int i = 0; i < source.length; i++) {
-        result.append(dictionary.get(source[i]) + " ");
+    String[] m = en.split(" ");
+    for (int i = 0; i < m.length; i++) {
+        result.append(dictionary.get(m[i]) + " ");
     }
     return result.toString();
 }
